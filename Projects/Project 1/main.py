@@ -45,5 +45,5 @@ else:
     elif(computer == 0 and you == 1):
         print("You Lose")
     
-    # else:
-    #     print("something went wrong")
+    else:
+        print("something went wrong")

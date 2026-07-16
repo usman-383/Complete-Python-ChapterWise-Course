@@ -1,3 +1,4 @@
+//javaScript file
 function playSound(name) {
     const sound = document.getElementById(name);
     if (sound) {

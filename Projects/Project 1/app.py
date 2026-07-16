@@ -1,4 +1,4 @@
-#gun water game
+
 from flask import Flask, render_template, request, session
 import random
 import webbrowser

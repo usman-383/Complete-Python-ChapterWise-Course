@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Snake Water Gun</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <audio id="click" src="{{ url_for('static', filename='sounds/click.wav') }}"></audio>
+    <audio id="win" src="{{ url_for('static', filename='sounds/win.wav') }}"></audio>
+    <audio id="lose" src="{{ url_for('static', filename='sounds/lose.wav') }}"></audio>
+
+
+    <div class="container">
+        <h1>🐍 Snake 💧 Water 🔫 Gun</h1>
+
+        <div class="score">
+            You: {{ user_score }} | Computer: {{ computer_score }}
+        </div>
+
+        <form method="POST">
+            <div class="choices">
+                <button name="choice" value="snake" onclick="playSound('click')">
+                    <img src="{{ url_for('static', filename='images/snake.png') }}">
+                </button>
+
+                <button name="choice" value="water" onclick="playSound('click')">
+                    <img src="{{ url_for('static', filename='images/water.png') }}">
+                </button>
+
+                <button name="choice" value="gun" onclick="playSound('click')">
+                    <img src="{{ url_for('static', filename='images/gun.png') }}">
+                </button>
+
+            </div>
+        </form>
+
+        {% if result %}
+        <div class="result animate">
+            <p>You chose: {{ user_choice }}</p>
+            <p>Computer chose: {{ computer_choice }}</p>
+            <h2>{{ result }}</h2>
+        </div>
+
+        <script>
+            playSound("{{ sound }}");
+        </script>
+        {% endif %}
+        {% if sound %}
+        <script>
+            window.addEventListener("click", function playOnce() {
+                playSound("{{ sound }}");
+                window.removeEventListener("click", playOnce);
+            });
+        </script>
+        {% endif %}
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

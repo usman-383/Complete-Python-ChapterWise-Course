@@ -47,4 +47,4 @@ else:
         print("You Lose")
     
     else:
-        print("something went wrong")
+        print("something went wrong!")

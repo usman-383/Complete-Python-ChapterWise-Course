@@ -1,4 +1,4 @@
-#Random
+#Random g
 
 import random
 n = random.randint(1,100)

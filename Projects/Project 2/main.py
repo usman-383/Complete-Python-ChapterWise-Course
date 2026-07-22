@@ -1,4 +1,4 @@
-#Random guess
+#Random guess n
 
 import random
 n = random.randint(1,100)

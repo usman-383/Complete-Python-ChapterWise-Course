@@ -1,4 +1,4 @@
-#Speech Recognisi
+#Speech Recognision
 import speech_recognition as sr 
 import webbrowser
 import pyttsx3

@@ -1,8 +1,8 @@
 # Step 1: Install the required libraries if you haven't already
 
 import pyautogui #for GUI automation
-import time #for adding delays
-import pyperclip
+import time #for adding delays  
+import pyperclip #for clipboard operations
 
 # Step 1: Click on the icon chrome icon
 pyautogui.moveTo(589, 1061, duration=0.5)

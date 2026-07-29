@@ -1,5 +1,6 @@
 # Step 1: Install the required libraries if you haven't already
-import pyautogui
+
+import pyautogui #for GUI automation
 import time
 import pyperclip
 

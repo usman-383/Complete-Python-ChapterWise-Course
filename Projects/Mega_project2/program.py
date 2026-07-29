@@ -1,3 +1,4 @@
+# Step 1: Install the required libraries if you haven't already
 import pyautogui
 import time
 import pyperclip

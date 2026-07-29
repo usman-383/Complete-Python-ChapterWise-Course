@@ -1,4 +1,4 @@
-# Please install pyautogui using pip if you 
+# Please install pyautogui using pip if you haven't 
 import pyautogui
 while True:
     a = pyautogui.position()

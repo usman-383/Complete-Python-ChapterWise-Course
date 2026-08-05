@@ -48,6 +48,8 @@ Handling exceptions gracefully with `try`, `except`, `finally`.
 
 Real-world exercises to sharpen your programming logic.
 
+### 🔹 **10. Mini Projects**
+
 ---
 
 ## 🎯 **Purpose**

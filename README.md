@@ -50,7 +50,7 @@ Real-world exercises to sharpen your programming logic.
 
 ### 🔹 **10. Mini Projects**
 
-This course
+This course i
 
 ---
 
